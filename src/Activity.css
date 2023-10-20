@@ -1,0 +1,50 @@
+.activity-input{
+    padding:10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.activity-input:focus{
+    outline: none;
+}
+
+.activity-add{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.activity-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.activity-list-container{
+    background-color: #BDB4EA;
+    width: 50%;
+    padding: 1vw;
+    border-radius: 10px;
+    font-size: 1.8vw;
+}
+.activity-list-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.activity-delete{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    .activity-add{
+        padding: 4px;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 100%;
+    }
+}

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Top from "./Top";
+import Activity from "./Activity";
+import { useState } from "react";
 
 function App() {
+  // How can I establish an array that receives updates from the backend 
+  // and transmit it to the Activity Component? Additionally,
+  //  how can I ensure that every time a user adds an element in the Activity Component, 
+  //  it is pushed to the backend?
+
+  const [activarr,setActivarr] = useState([{id:1,activity:"Have your Breakfast"}])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Top/>
+      <Activity activarr={activarr} setActivarr={setActivarr}/>
     </div>
   );
 }
